@@ -14,9 +14,17 @@ We provide the DOGMa estimations for the training/validation samples of the KITT
 Out of the 7481 training/validation samples, we provide the corresponding DOGMas for 7275 of them. The missing 206 grids correspond to samples at the beginning of the raw sequences (where the filter had not yet converged), or to a sequence with odometry issues (0093@2011_09_26). The list of missing grids can be found in the following [file](grids_not_found_summary.log).
 
 ### Occupancy Grid size
+The selected grid size was (432, 496) cells, with a resolution of 0.16 m. This corresponds to a distance of 69.12 m along the x axis (front of the vehicle) and 39.68 m to each side in the y axis. The origin of the grid is located 1.73 m below the Velodyne sensor (i.e. on the ground).
 
 ### Occupancy Grid contents
-For each dataset sample, we provide two 
+For each dataset sample, we provide two npy files:
+- state_grid.npy: for each cell, it constains a discrete probability distribution over its state. It has four channels:
+  - channel 0: static occupancy
+  - channel 1: dynamic occupancy
+  - channel 2: free occupancy
+  - channel 3: unknown occupancy  
+  Refer to the original CMCDOT publication (https://hal.archives-ouvertes.fr/hal-01205298/) for further details.  
+  The gif visualization above uses the following color scheme: blue (static), green (dynamic), red (unknown) and black (free).
 
 ## Utility
 
