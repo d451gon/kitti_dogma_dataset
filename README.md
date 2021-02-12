@@ -18,7 +18,7 @@ The selected grid size was (432, 496) cells, with a resolution of 0.16 m. This c
 
 ### Occupancy Grid contents
 For each dataset sample, we provide two npy files:
-- state_grid.npy: for each cell, it constains a discrete probability distribution over its state. It has four channels:
+- state_grid.npy: for each cell, it constains a discrete probability distribution over its occupancy state. It has four channels:
   - channel 0: static occupancy
   - channel 1: dynamic occupancy
   - channel 2: free occupancy
