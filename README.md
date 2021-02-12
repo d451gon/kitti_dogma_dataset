@@ -25,7 +25,8 @@ For each dataset sample, we provide two npy files:
   - channel 3: unknown occupancy  
 - velocity_grid.npy: for each cell, it constains the average velocity of its dynamic particles. The velocity is represented in cells per second. Note: in some corner cases (e.g. samples at the beginning of a sequence), there may be NaN or very large values in the velocities; your code should account for that. This file contains two channels:  
   - channel 0: velocity in the x axis
-  - channel 1: velocity in the y axis 
+  - channel 1: velocity in the y axis  
+  
 Refer to the original CMCDOT publication (https://hal.archives-ouvertes.fr/hal-01205298/) for further details.  
 The gif visualization above uses the following color scheme: blue (static), green (dynamic), red (unknown) and black (free).
 
