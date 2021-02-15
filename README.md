@@ -35,7 +35,7 @@ We include in this repository some simple python code to visualize the grids. Ad
 ## Utility
 Occupancy Grids are an environment representation that is very convenient in tasks such as trajectory planning. In the paper "Leveraging Dynamic Occupancy Grids for 3D Object Detection in Point Clouds" (https://hal.inria.fr/hal-03044979/), we studied if and how this representation of the dynamic environment could help in the 3D object detection task.  
 
-The conclusion of the paper was that by having the DOGMa information as an input to the detection model we could improve the orientation prediction for moving obstacles, as well as better detect smaller obstacles such as predestrians, especially when they are occluded or far away from the sensors (i.e. with less Lidar hits). In non-published experiments, this conclusion carried over to cases where the point cloud input was downsampled to a fewer number of layers.
+The conclusion of the paper was that by having the DOGMa information as an input to the detection model we could improve the orientation prediction for moving obstacles, as well as better detect smaller obstacles such as predestrians, especially when they are occluded or far away from the sensors (i.e. with fewer Lidar hits). In non-published experiments, this conclusion carried over to cases where the point cloud input was downsampled to a fewer number of layers.
 
 ## References
 Please cite our work if you use our data:
